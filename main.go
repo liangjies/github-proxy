@@ -13,9 +13,9 @@ import (
 func main() {
 	port := os.Getenv("PORT")
 	if port == "" {
-		port = "8080"
+		port = "8081"
 	}
-	reverseUrl := flag.String("r", "https://raw.githubusercontent.com", "需要代理的地址")
+	reverseUrl := flag.String("r", "https://cocopilot.org", "需要代理的地址")
 	flag.Parse()
 
 	remote, err := url.Parse(*reverseUrl)
