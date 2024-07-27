@@ -15,7 +15,7 @@ func main() {
 	if port == "" {
 		port = "8081"
 	}
-	reverseUrl := flag.String("r", "https://cocopilot.org", "需要代理的地址")
+	reverseUrl := flag.String("r", "https://override.smnet.io", "需要代理的地址")
 	flag.Parse()
 
 	remote, err := url.Parse(*reverseUrl)
